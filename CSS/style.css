@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(170 143 208);
+}
+button:hover{
+    background-color: #fff;
+}
+.again_button{
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.guess_text{
+    font-weight: 600;
+}
+.current_number{
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid #000;
+    background-color: #fff;
+    z-index: 999;
+}
+.current_wrapper{
+    position: relative;
+}
+.current_wrapper::after , .current_wrapper::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 35%;
+    border: 5px solid #fff;
+    width: 100%;
+    z-index: -1;
+}
+.check_btn{
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: auto;
+}
+.check_btn:hover , .again_button:hover{
+    background-color: #fff;
+}
+.check_input_box{
+    display: flex;
+    flex-direction: column;
+}
+input[type="number"]
+{
+    font-size:25px;
+}
+.scores_wrapper>ul>li{
+    list-style: none;
+    font-size: 2rem;
+    color: #fff;
+}
